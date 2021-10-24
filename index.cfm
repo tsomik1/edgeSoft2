@@ -94,7 +94,7 @@
 								{field: 'Chamber',title: 'Chamber',align: 'left',valign: 'top',sortable: true},
 								{field: 'Party',title: 'Party',align: 'left',valign: 'top',sortable: true},
 								{field: 'LegState',title: 'State',align: 'left',valign: 'top',sortable: true},
-								{field: 'District',title: 'District',align: 'left',valign: 'top',sortable: true}
+								{field: 'District',title: 'District',align: 'left',valign: 'top',sortable: true}]
 								
 					});
 			});
