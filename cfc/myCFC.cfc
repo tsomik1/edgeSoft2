@@ -29,10 +29,25 @@
                  ORDER BY first,last
         </cfquery>
 
+               <cfquery name="qCount" datasource="#request.datasource#">
+                        SELECT COUNT(*) as total
+                    FROM congressMembers 
+                    
+                    WHERE 1=1
+                    <cfif Search NEQ "">
+                        and
+                        and first like '%#arguments.Search#%' OR last like '%#arguments.Search#%'
+                    </cfif>
+                    
+                </cfquery>
+
+
+
+
       
 
         <cfset resultStruct = Structnew() />
-      	<cfset resultStuct["total"] = getMembers.recordcount />
+      	<cfset resultStuct["total"] = qCount.total />
         <cfset resultStuct["rows"] = ArrayNew(1) />
       	<cfset count = 1/>
       	<cfloop query="getMembers" >
