@@ -15,9 +15,7 @@
                 FROM congress-memersb 
                 
                 WHERE 1=1
-				<cfif Search NEQ "">
-                    and first like '%#arguments.Search#%' OR last like '%#arguments.Search#%'
-                </cfif>
+				
                 
                
              )
