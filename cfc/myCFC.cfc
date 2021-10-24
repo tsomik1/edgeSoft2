@@ -32,7 +32,7 @@
       
 
         <cfset resultStruct = Structnew() />
-      	<cfset resultStuct["total"] = getMembers.total />
+      	<cfset resultStuct["total"] = getMembers.recordcount />
         <cfset resultStuct["rows"] = ArrayNew(1) />
       	<cfset count = 1/>
       	<cfloop query="getMembers" >
