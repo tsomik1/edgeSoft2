@@ -7,8 +7,6 @@
 	<cfset this.sessiontimeout = CreateTimeSpan(0,1,0,0)>
 
 
-
-
 	<cffunction name="onMissingTemplate" returnType="boolean" output="true">
 		<cfargument name="targetPage" type="string" required=true/>
 
