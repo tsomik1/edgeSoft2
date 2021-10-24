@@ -88,9 +88,9 @@
 						clickToSelect: false,
 						columns: [
 								{field: 'COUNT',title: '#',align: 'right',valign: 'bottom',sortable: false},
-								{field: 'lastname',title: 'Last Name',visible:true},
+								{field: 'last',title: 'Last Name',visible:true},
 								{field: 'first',title: 'First Name',align: 'left',valign: 'middle',sortable: true},
-								{field: 'Title',title: 'Title',align: 'left',valign: 'middle',sortable: true},
+								{field: 'title',title: 'Title',align: 'left',valign: 'middle',sortable: true},
 								{field: 'Chamber',title: 'Chamber',align: 'left',valign: 'top',sortable: true},
 								{field: 'operate',title: 'Actions',align: 'center',valign: 'middle',clickToSelect: false}]
 					});
