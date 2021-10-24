@@ -85,7 +85,7 @@
 						striped: true,
 						pagination: true,
 						pageSize: 50,
-						pageList: [10, 25, 50, 100, 200],
+						pageList: [50, 100, 200,300,500,550],
 						search: true,
 						showColumns: true,
 						showRefresh: true,
