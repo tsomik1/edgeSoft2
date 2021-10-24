@@ -49,10 +49,11 @@
 					data-url="/softEdge/cfc/myCFC.cfc?method=getMembers"
 					data-show-columns="true"
 					  
-  data-show-columns-toggle-all="true"
-  data-show-pagination-switch="true"
-  data-show-toggle="true"
-  data-show-fullscreen="true"
+					data-show-columns-toggle-all="true"
+					data-show-pagination-switch="true"
+					data-show-toggle="true"
+					data-show-fullscreen="true"
+					data-buttons="buttons"		
 					data-toolbar-align="left">
 				</table>
 			</div>
