@@ -48,6 +48,11 @@
 					data-show-toggle="true"
 					data-url="/softEdge/cfc/myCFC.cfc?method=getMembers"
 					data-show-columns="true"
+					  
+  data-show-columns-toggle-all="true"
+  data-show-pagination-switch="true"
+  data-show-toggle="true"
+  data-show-fullscreen="true"
 					data-toolbar-align="left">
 				</table>
 			</div>
