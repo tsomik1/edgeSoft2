@@ -12,10 +12,12 @@
             (
 				SELECT	  Title,First,Last,Chamber,Party,LegState,District,
 						 ROW_NUMBER() OVER (ORDER BY #sort# #order#) [Row]
-                FROM congress-memersb 
+                FROM congressMembers 
                 
                 WHERE 1=1
-				
+				<cfif Search NEQ "">
+                    and first like '%#arguments.Search#%' OR last like '%#arguments.Search#%'
+                </cfif>
                 
                
              )
@@ -23,7 +25,8 @@
                       *
                 FROM
                      Rows
-                
+                WHERE Row >= #offset+1# and Row <= #offset+limit#
+                 ORDER BY first,last
         </cfquery>
 
       
