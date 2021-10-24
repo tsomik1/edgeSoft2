@@ -57,7 +57,7 @@
 	<cffunction name="OnRequestStart" access="public" returntype="boolean" output="false" hint="Fires at first part of page processing.">
 		<cfargument name="TargetPage" type="string" required="true"/>
 
-
+		<cfset request.datasource = this.datasource>
 
 
 		<cfreturn true />
