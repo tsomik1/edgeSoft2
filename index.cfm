@@ -24,82 +24,82 @@ Tesdt
 	
 </cfsilent>	
 
-<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" >
+<body>
 
 
 <div class="content">
 	<h1>Search >>></h1>
 
 
-<div class="container"><br />
-	<div class="row">
-        <div class="page-header">
-           
-        </div>
-       
+	<div class="container"><br />
+		<div class="row">
+			<div class="page-header">
+			
+			</div>
 		
-		<div id="toolbar" class="btn-group">
-                    
+			
+			<div id="toolbar" class="btn-group">
+						
+			</div>
+			
+			<div id="Error" class="text-danger"></div>
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<table id="users" data-height="400" data-side-pagination="server" data-pagination="true" data-search="true"  clickToSelect="true" singleSelect="true" data-single-select="true"
+					data-toolbar="#toolbar"
+					data-show-refresh="true"
+					data-show-toggle="true"
+					data-url="/cfc/myCFC.cfc?method=getMembers"
+					data-show-columns="true"
+					data-toolbar-align="left">
+				</table>
+			</div>
 		</div>
-		
-        <div id="Error" class="text-danger"></div>
-        <div class="col-sm-12 col-md-12 col-lg-12">
-            <table id="users" data-height="400" data-side-pagination="server" data-pagination="true" data-search="true"  clickToSelect="true" singleSelect="true" data-single-select="true"
-            	data-toolbar="#toolbar"
-            	data-show-refresh="true"
-            	data-show-toggle="true"
-		 		data-url="/cfc/myCFC.cfc?method=getMembers"
-				data-show-columns="true"
-				data-toolbar-align="left">
-            </table>
-        </div>
-    </div>
-</div>
+	</div>
 
-<style>
-	.form-control{
-		font-size:14px;
-	}
+	<style>
+		.form-control{
+			font-size:14px;
+		}
 
-	#toolbar2{
-		width:30%;
-	}
-</style>
-<script type="text/javascript">
+		#toolbar2{
+			width:30%;
+		}
+	</style>
+		<script type="text/javascript">
 
-	$(document).ready(function(e) {
-		
-		$("#categoty").change(function(){
-			$('#users').bootstrapTable('refresh',{query: {categoryid: $(this).val()}});
-		})
+			$(document).ready(function(e) {
+				
+				$("#categoty").change(function(){
+					$('#users').bootstrapTable('refresh',{query: {categoryid: $(this).val()}});
+				})
 
-		$('#users').bootstrapTable({
-                method: 'get',
-                url: '/cfc/myCFC.cfc?method=getMembers',
-                cache: false,
-                height: 600,
-                striped: true,
-                pagination: true,
-                pageSize: 20,
-                pageList: [10, 25, 50, 100, 200],
-                search: true,
-                showColumns: false,
-                showRefresh: true,
-	            singleSelect:true,
-                smartDisplay	:true,
-                minimumCountColumns: 2,
-                clickToSelect: true,
-                columns: [
-				          {field: 'COUNT',title: 'WIKI #',align: 'right',valign: 'bottom',sortable: false},
-						  {field: 'wikiid',title: 'Wiki ID',visible:false},
-						  {field: 'name',title: 'Wiki Title',align: 'left',valign: 'middle',sortable: true},
-						  {field: 'docUploaded',title: 'File Uploaded',align: 'left',valign: 'middle',sortable: true},
-						  {field: 'status',title: 'Status',align: 'left',valign: 'top',sortable: true},
-						  {field: 'operate',title: 'Actions',align: 'center',valign: 'middle',clickToSelect: false,formatter: operateFormatter,events: operateEvents}]
-            });
-    });
+				$('#users').bootstrapTable({
+						method: 'get',
+						url: '/cfc/myCFC.cfc?method=getMembers',
+						cache: false,
+						height: 600,
+						striped: true,
+						pagination: true,
+						pageSize: 20,
+						pageList: [10, 25, 50, 100, 200],
+						search: true,
+						showColumns: false,
+						showRefresh: true,
+						singleSelect:true,
+						smartDisplay	:true,
+						minimumCountColumns: 2,
+						clickToSelect: true,
+						columns: [
+								{field: 'COUNT',title: 'WIKI #',align: 'right',valign: 'bottom',sortable: false},
+								{field: 'wikiid',title: 'Wiki ID',visible:false},
+								{field: 'name',title: 'Wiki Title',align: 'left',valign: 'middle',sortable: true},
+								{field: 'docUploaded',title: 'File Uploaded',align: 'left',valign: 'middle',sortable: true},
+								{field: 'status',title: 'Status',align: 'left',valign: 'top',sortable: true},
+								{field: 'operate',title: 'Actions',align: 'center',valign: 'middle',clickToSelect: false,formatter: operateFormatter,events: operateEvents}]
+					});
+			});
 
-</script>
+		</script>
 
 </div>
 </body>
