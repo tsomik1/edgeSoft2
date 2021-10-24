@@ -45,7 +45,7 @@
 					data-toolbar="#toolbar"
 					data-show-refresh="true"
 					data-show-toggle="true"
-					data-url="/cfc/myCFC.cfc?method=getMembers"
+					data-url="/softEdge/cfc/myCFC.cfc?method=getMembers"
 					data-show-columns="true"
 					data-toolbar-align="left">
 				</table>
@@ -88,7 +88,7 @@
 						clickToSelect: false,
 						columns: [
 								{field: 'COUNT',title: '#',align: 'right',valign: 'bottom',sortable: false},
-								{field: 'lastname',title: 'Last Name',visible:false},
+								{field: 'lastname',title: 'Last Name',visible:true},
 								{field: 'first',title: 'First Name',align: 'left',valign: 'middle',sortable: true},
 								{field: 'Title',title: 'Title',align: 'left',valign: 'middle',sortable: true},
 								{field: 'Chamber',title: 'Chamber',align: 'left',valign: 'top',sortable: true},
