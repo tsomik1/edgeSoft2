@@ -1,5 +1,5 @@
 <cfcomponent output="no">
-	<cfset this.name="IDS_new_#lcase(cgi.server_name)#">
+	<cfset this.name="NEW_#lcase(cgi.server_name)#">
 	<cfset this.clientManagement=true>
 	<cfset this.sessionManagement=true>
 	<!---<cfset this.setclientcookies = true>--->
