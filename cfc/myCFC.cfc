@@ -3,7 +3,7 @@
     	<cfargument name="offset" default="0" type="numeric">
         <cfargument name="limit" default="20" type="numeric">
         <cfargument name="order" default="asc" type="string">
-        <cfargument name="sort" default="wikiid" type="string">
+        <cfargument name="sort" default="last" type="string">
         <cfargument name="search" default="" type="string" />
 		 <cfargument name="categoryid" default="" type="string" />
 
@@ -12,7 +12,7 @@
             (
 				SELECT	  Title,First,Last,Chamber,Party,LegState,District,
 						 ROW_NUMBER() OVER (ORDER BY #sort# #order#) [Row]
-                FROM congress-members 
+                FROM congress-memersb 
                 
                 WHERE 1=1
 				<cfif Search NEQ "">
