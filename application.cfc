@@ -5,7 +5,7 @@
 	<!---<cfset this.setclientcookies = true>--->
 	<cfset this.scriptprotect = "all">
 	<cfset this.sessiontimeout = CreateTimeSpan(0,1,0,0)>
-	<cfset this.datasource = "test">
+	<cfset this.DATASOURCE = "test">
 
 
 	
