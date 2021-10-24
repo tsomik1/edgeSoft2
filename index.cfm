@@ -91,7 +91,7 @@
 						showRefresh: true,
 						singleSelect:true,
 						smartDisplay	:true,
-						minimumCountColumns: 2,
+						minimumCountColumns: 5,
 						clickToSelect: false,
 						columns: [
 								{field: 'COUNT',title: '#',align: 'right',valign: 'bottom',sortable: false},
