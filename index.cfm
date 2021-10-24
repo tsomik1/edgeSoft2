@@ -87,12 +87,12 @@
 						minimumCountColumns: 2,
 						clickToSelect: true,
 						columns: [
-								{field: 'COUNT',title: 'WIKI #',align: 'right',valign: 'bottom',sortable: false},
-								{field: 'wikiid',title: 'Wiki ID',visible:false},
-								{field: 'name',title: 'Wiki Title',align: 'left',valign: 'middle',sortable: true},
-								{field: 'docUploaded',title: 'File Uploaded',align: 'left',valign: 'middle',sortable: true},
-								{field: 'status',title: 'Status',align: 'left',valign: 'top',sortable: true},
-								{field: 'operate',title: 'Actions',align: 'center',valign: 'middle',clickToSelect: false,formatter: operateFormatter,events: operateEvents}]
+								{field: 'COUNT',title: '#',align: 'right',valign: 'bottom',sortable: false},
+								{field: 'lastname',title: 'Last Name',visible:false},
+								{field: 'first',title: 'First Name',align: 'left',valign: 'middle',sortable: true},
+								{field: 'Title',title: 'Title',align: 'left',valign: 'middle',sortable: true},
+								{field: 'Chamber',title: 'Chamber',align: 'left',valign: 'top',sortable: true},
+								{field: 'operate',title: 'Actions',align: 'center',valign: 'middle',clickToSelect: false}]
 					});
 			});
 
