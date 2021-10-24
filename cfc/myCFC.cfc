@@ -7,7 +7,7 @@
         <cfargument name="search" default="" type="string" />
 		 <cfargument name="categoryid" default="" type="string" />
 
-     	<cfquery name="getMembers" datasource="#request.datasource#">
+     	<cfquery name="getMembers" datasource="#this.datasource#">
         	WITH Rows AS
             (
 				SELECT	  Title,First,Last,Chamber,Party,LegState,District,

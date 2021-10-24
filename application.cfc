@@ -5,7 +5,10 @@
 	<!---<cfset this.setclientcookies = true>--->
 	<cfset this.scriptprotect = "all">
 	<cfset this.sessiontimeout = CreateTimeSpan(0,1,0,0)>
+	<cfset this.datasource = "test">
 
+
+	
 
 	<cffunction name="onMissingTemplate" returnType="boolean" output="true">
 		<cfargument name="targetPage" type="string" required=true/>
@@ -54,7 +57,7 @@
 	<cffunction name="OnRequestStart" access="public" returntype="boolean" output="false" hint="Fires at first part of page processing.">
 		<cfargument name="TargetPage" type="string" required="true"/>
 
-	
+
 
 
 		<cfreturn true />
