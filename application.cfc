@@ -44,19 +44,9 @@
 
   	<cffunction name="onApplicationStart" returnType="boolean">
 
-		<cfset application.SiteKey = "6LezadQZAAAAACeFVn0eLXY1IrnDEE0Igu1xsud8">
-		<cfset application.SecretKey = "6LezadQZAAAAAAA2CGxe6vZdvSObjwvQxptPLYmG">
-		<cfset application.apiCache = {} />
+		
 
-		<cfif isDefined("request.reload") and request.reload OR ( NOT structKeyExists(application,"stateLabels") )>
-			<cflock scope="application" type="exclusive" timeout="20">
-				<cfset structDelete(application,"stateLabels")>
-				<cfset application.stateLabels.MD = "Maryland">
-				<cfset application.stateLabels.VA = "Virginia">
-				<cfset application.stateLabels.DC = "DC">
-				<cfset application.stateLabels.CA = "California">
-			</cflock>
-		</cfif>
+		
 
 
 		<cfreturn 1>
