@@ -25,13 +25,13 @@
 
 
 <div class="content">
-	<h1>Search >>></h1>
+	
 
 
 	<div class="container"><br />
 		<div class="row">
 			<div class="page-header">
-			
+				<h1>Search >>></h1>		
 			</div>
 		
 			
