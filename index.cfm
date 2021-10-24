@@ -42,7 +42,7 @@
 			<div id="Error" class="text-danger"></div>
 			<div class="col-sm-12 col-md-12 col-lg-12">
 				<table id="users" data-height="400" data-side-pagination="server" data-pagination="true" data-search="true"  
-						clickToSelect="true" singleSelect="true" data-single-select="true"
+						clickToSelect="false" singleSelect="true" data-single-select="true"
 					data-toolbar="#toolbar"
 					data-show-refresh="true"
 					data-show-toggle="true"
