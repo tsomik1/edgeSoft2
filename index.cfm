@@ -72,7 +72,7 @@
 
 				$('#users').bootstrapTable({
 						method: 'get',
-						url: '/cfc/myCFC.cfc?method=getMembers',
+						url: '/softEdge/cfc/myCFC.cfc?method=getMembers',
 						cache: false,
 						height: 600,
 						striped: true,
@@ -85,7 +85,7 @@
 						singleSelect:true,
 						smartDisplay	:true,
 						minimumCountColumns: 2,
-						clickToSelect: true,
+						clickToSelect: false,
 						columns: [
 								{field: 'COUNT',title: '#',align: 'right',valign: 'bottom',sortable: false},
 								{field: 'lastname',title: 'Last Name',visible:false},
