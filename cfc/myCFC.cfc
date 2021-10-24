@@ -25,8 +25,7 @@
                       *
                 FROM
                      Rows
-                WHERE Row >= #offset+1# and Row <= #offset+limit#
-                 ORDER BY first,last
+                
         </cfquery>
 
       
