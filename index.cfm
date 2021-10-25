@@ -42,7 +42,8 @@
 			<div class="page-header">
 				<h1>Search >>></h1>
 
-				<h3>The search is prividing basic functionality. It can search the data using Political Party filters and State of Origin. The functionality such as real time record edit/insert/delete/ can be easily implemented. </h3>		
+				<h3>The search is providing basic functionalities. 
+				It can search the data using Political Party filters and State of Origin. The functionality such as real time record edit/insert/delete/ can be easily implemented. </h3>		
 			</div>
 		
 			
@@ -63,10 +64,8 @@
 			</div>
 			
 			<div id="Error" class="text-danger"></div>
-			<div class="col-sm-4 col-md-4 col-lg-4">
 
-			</div>
-			<div class="col-sm-8 col-md-8 col-lg-8">
+			<div class="col-sm-12 col-md-12 col-lg-12">
 				<table id="users" data-height="400" data-side-pagination="server" data-pagination="true" data-search="true"  
 						clickToSelect="false" singleSelect="true" data-single-select="true"
 					data-toolbar="#toolbar"
