@@ -54,7 +54,7 @@
 				<select name="state" id="state" class="form-control" placeholder="Party">
 					<option value="">Please select a party</option>
 					<cfoutput query="#getState#">
-						<option value="#LegState#">#LegState#</cfoutput>
+						<option value="#LegState#">#LegState#</option>
 					</cfoutput>
 				</select>
 
