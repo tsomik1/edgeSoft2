@@ -51,7 +51,7 @@
 					  
 					data-show-columns-toggle-all="true"
 					data-show-pagination-switch="true"
-					data-show-toggle="true"
+					data-page-size='50'
 					data-show-fullscreen="true"
 					data-buttons="buttons"		
 					data-toolbar-align="left">
