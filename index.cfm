@@ -56,8 +56,7 @@
 					data-show-pagination-switch="true"
 					data-page-size='50'
 					data-show-fullscreen="true"
-					data-buttons="buttons"
-					data-buttons-class="primary"
+					
 					data-toolbar-align="left">
 
 					  <thead>
@@ -109,7 +108,7 @@
 						showRefresh: true,
 						singleSelect:true,
 						smartDisplay	:true,
-						minimumCountColumns: 5,
+						minimumCountColumns: 2,
 						clickToSelect: false,
 						columns: [
 								{field: 'COUNT',title: '#',align: 'right',valign: 'bottom',sortable: false},
