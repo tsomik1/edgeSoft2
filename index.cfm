@@ -36,7 +36,10 @@
 		
 			
 			<div id="toolbar" class="btn-group">
-						
+				<select name="chamber" class="form-class">
+					<option value="1">d</option>
+					<option value="2">d2</option>
+				</select>		
 			</div>
 			
 			<div id="Error" class="text-danger"></div>
@@ -55,7 +58,7 @@
 					data-show-columns-toggle-all="true"
 					data-show-pagination-switch="true"
 					data-page-size='50'
-					data-show-fullscreen="true" data-show-search-button="true"
+					data-show-fullscreen="true"
 
 					
 					data-toolbar-align="left">
