@@ -55,7 +55,8 @@
 					data-show-columns-toggle-all="true"
 					data-show-pagination-switch="true"
 					data-page-size='50'
-					data-show-fullscreen="true"
+					data-show-fullscreen="true" data-show-search-button="true"
+
 					
 					data-toolbar-align="left">
 
