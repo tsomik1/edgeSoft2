@@ -55,6 +55,7 @@
 					data-show-fullscreen="true"
 					data-buttons="buttons"
 					  data-buttons-class="primary"
+					    data-buttons-toolbar=".buttons-toolbar"
 		
 					data-toolbar-align="left">
 				</table>
