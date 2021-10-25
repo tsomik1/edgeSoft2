@@ -69,7 +69,7 @@
 							<th data-field="COUNTid">COUNT</th>
 							<th data-field="last">Last Name</th>
 							<th data-field="first">First Name</th>
-								<th data-field="title">Title</th>
+							<th data-field="title">Title</th>
 							<th data-field="Chamber">Chamber</th>
 							<th data-field="Party">Party</th>
 						</tr>
@@ -101,7 +101,7 @@
 
 				$('#users').bootstrapTable({
 						method: 'get',
-						url: '/softEdge/cfc/myCFC.cfc?method=getMembers',
+						url: '/softEdge/cfc/myCFC.cfc?method=getMembers&party=' + $("#party").val(),
 						cache: false,
 						height: 600,
 						striped: true,
