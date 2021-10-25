@@ -95,9 +95,9 @@
 
 			$(document).ready(function(e) {
 				
-				//$("#party").change(function(){
-					//$('#users').bootstrapTable('refresh',{query: {party: $(this).val()}});
-				//})
+				$("#party").change(function(){
+					$('#users').bootstrapTable('refresh',{query: {party: $(this).val()}});
+				})
 
 				$('#users').bootstrapTable({
 						method: 'get',
