@@ -37,6 +37,7 @@
 			
 			<div id="toolbar" class="btn-group">
 				<select name="party" id="party" class="form-control" placeholder="Party">
+					<option value="">Please select a party</option>
 					<option value="R">Republican</option>
 					<option value="D">Democratic</option>
 				</select>		
