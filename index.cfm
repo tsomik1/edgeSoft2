@@ -53,7 +53,9 @@
 					data-show-pagination-switch="true"
 					data-page-size='50'
 					data-show-fullscreen="true"
-					data-buttons="buttons"		
+					data-buttons="buttons"
+					  data-buttons-class="primary"
+		
 					data-toolbar-align="left">
 				</table>
 			</div>
