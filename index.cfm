@@ -23,7 +23,7 @@
 		</cfquery>
 	</cfsilent>	
 	
-	<cfdump var="#getState#">
+	
 </head>
 
 <cfsilent>
@@ -53,7 +53,7 @@
 
 				<select name="state" id="state" class="form-control" placeholder="Party">
 					<option value="">Please select a party</option>
-					<cfoutput query="getState">
+					<cfoutput query="#getState#">
 						<option value="#LegState#">#LegState#</cfoutput>
 					</cfoutput>
 				</select>
