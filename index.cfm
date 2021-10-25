@@ -116,6 +116,11 @@
 					$('#users').bootstrapTable('refresh',{query: {party: $(this).val()}});
 				})
 
+				$("#state").change(function(){
+					$('#users').bootstrapTable('refresh',{query: {state: $(this).val()}});
+				})
+
+
 				$('#users').bootstrapTable({
 						method: 'get',
 						url: '/softEdge/cfc/myCFC.cfc?method=getMembers&party=' + $("#party").val(),
