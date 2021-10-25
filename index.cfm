@@ -40,7 +40,9 @@
 	<div class="container"><br />
 		<div class="row">
 			<div class="page-header">
-				<h1>Search >>></h1>		
+				<h1>Search >>></h1>
+
+				<h3>The search is prividing basic functionality. It can search the data using Political Party filters and State of Origin. The functionality such as real time record edit/insert/delete/ can be easily implemented. </h3>		
 			</div>
 		
 			
