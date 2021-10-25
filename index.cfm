@@ -40,7 +40,10 @@
 			</div>
 			
 			<div id="Error" class="text-danger"></div>
-			<div class="col-sm-12 col-md-12 col-lg-12">
+			<div class="col-sm-4 col-md-4 col-lg-4">
+
+			</div>
+			<div class="col-sm-8 col-md-8 col-lg-8">
 				<table id="users" data-height="400" data-side-pagination="server" data-pagination="true" data-search="true"  
 						clickToSelect="false" singleSelect="true" data-single-select="true"
 					data-toolbar="#toolbar"
