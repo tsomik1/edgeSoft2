@@ -54,9 +54,7 @@
 					data-page-size='50'
 					data-show-fullscreen="true"
 					data-buttons="buttons"
-					  data-buttons-class="primary"
-					    data-buttons-toolbar=".buttons-toolbar"
-		
+					data-buttons-class="primary"
 					data-toolbar-align="left">
 				</table>
 			</div>
