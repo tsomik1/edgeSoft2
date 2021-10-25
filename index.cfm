@@ -94,8 +94,8 @@
 
 			$(document).ready(function(e) {
 				
-				$("#categoty").change(function(){
-					$('#users').bootstrapTable('refresh',{query: {categoryid: $(this).val()}});
+				$("#party").change(function(){
+					$('#users').bootstrapTable('refresh',{query: {party: $(this).val()}});
 				})
 
 				$('#users').bootstrapTable({

@@ -5,7 +5,7 @@
         <cfargument name="order" default="asc" type="string">
         <cfargument name="sort" default="last" type="string">
         <cfargument name="search" default="" type="string" />
-		 <cfargument name="categoryid" default="" type="string" />
+		 <cfargument name="party" default="" type="string" />
 
      	<cfquery name="getMembers" datasource="#request.DATASOURCE#">
         	WITH Rows AS
@@ -16,9 +16,11 @@
                 
                 WHERE 1=1
 				<cfif Search NEQ "">
-                    and first like '%#arguments.Search#%' OR last like '%#arguments.Search#%'
+                    and (first like '%#arguments.Search#%' OR last like '%#arguments.Search#%')
                 </cfif>
-                
+                <cfif Party NEQ "">
+                    and (Party = <cfqueryparam value = "#arguments.party#" CFSQLType="cf_sql_varchar">)
+                </cfif>
                
              )
                 SELECT
@@ -37,6 +39,9 @@
                     <cfif Search NEQ "">
                         and first like '%#arguments.Search#%' OR last like '%#arguments.Search#%'
                     </cfif>
+                <cfif Party NEQ "">
+                    and (Party = <cfqueryparam value = "#arguments.party#" CFSQLType="cf_sql_varchar">)
+                </cfif>
                     
                 </cfquery>
 
