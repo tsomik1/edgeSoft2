@@ -36,9 +36,9 @@
 		
 			
 			<div id="toolbar" class="btn-group">
-				<select name="chamber" class="form-control">
-					<option value="1">d</option>
-					<option value="2">d2</option>
+				<select name="party" id="party" class="form-control" placeholder="Party">
+					<option value="R">Republican</option>
+					<option value="D">Democratic</option>
 				</select>		
 			</div>
 			
