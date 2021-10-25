@@ -59,6 +59,20 @@
 					data-buttons="buttons"
 					data-buttons-class="primary"
 					data-toolbar-align="left">
+
+					  <thead>
+						<tr>
+							<th data-field="COUNTid">COUNT</th>
+							<th data-field="last">Last Name</th>
+							<th data-field="first">First Name</th>
+								<th data-field="title">Title</th>
+							<th data-field="Chamber">Chamber</th>
+							<th data-field="Party">Party</th>
+						</tr>
+					</thead>
+
+
+
 				</table>
 			</div>
 		</div>
