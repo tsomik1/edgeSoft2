@@ -36,7 +36,7 @@
 		
 			
 			<div id="toolbar" class="btn-group">
-				<select name="chamber" class="form-class">
+				<select name="chamber" class="form-control">
 					<option value="1">d</option>
 					<option value="2">d2</option>
 				</select>		
