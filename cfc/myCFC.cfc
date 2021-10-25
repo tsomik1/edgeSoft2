@@ -6,6 +6,7 @@
         <cfargument name="sort" default="last" type="string">
         <cfargument name="search" default="" type="string" />
 		 <cfargument name="party" default="" type="string" />
+         <cfargument name="state" default="" type="string" />
 
      	<cfquery name="getMembers" datasource="#request.DATASOURCE#">
         	WITH Rows AS
@@ -21,7 +22,9 @@
                 <cfif Party NEQ "">
                     and (Party = <cfqueryparam value = "#arguments.party#" CFSQLType="cf_sql_varchar">)
                 </cfif>
-               
+               <cfif state NEQ "">
+                    and (LegState = <cfqueryparam value = "#arguments.state#" CFSQLType="cf_sql_varchar">)
+                </cfif>
              )
                 SELECT
                       *
@@ -41,6 +44,11 @@
                     </cfif>
                 <cfif Party NEQ "">
                     and (Party = <cfqueryparam value = "#arguments.party#" CFSQLType="cf_sql_varchar">)
+                </cfif>
+
+
+                <cfif state NEQ "">
+                    and (LegState = <cfqueryparam value = "#arguments.state#" CFSQLType="cf_sql_varchar">)
                 </cfif>
                     
                 </cfquery>
